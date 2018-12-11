@@ -1,0 +1,13 @@
+<zk>
+    <window title="Hello ZK - Spring Boot!" border="normal">
+        <script>
+            var ajax = new XMLHttpRequest();
+            ajax.open("GET", "largo.html", false);
+            ajax.send();
+            document.body.innerHTML += ajax.responseText;
+        </script>
+        You are using ZK version
+        <label value="${session.webApp.version}"/>
+    </window>
+
+</zk>
